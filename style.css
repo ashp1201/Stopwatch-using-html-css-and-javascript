@@ -1,0 +1,129 @@
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.left {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    position: absolute;
+    left: 143px;
+    top: 10px;
+    border: none;
+    width: 110px;
+    height: 110px;
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: lightgreen;
+    color: white;
+}
+
+.stop {
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 143px;
+    top: 10px;
+    border: none;
+    width: 110px;
+    height: 110px;
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+.reset {
+    position: absolute;
+    cursor: pointer;
+    left: 300px;
+    top: 83px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    transform: rotate(30deg);
+    background-color: lightsalmon;
+    color: white;
+}
+
+.watch_img {
+    width: 400px;
+}
+
+.circle {
+    width: 305px;
+    height: 305px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 47px;
+    font-size: 60px;
+    background-color: white;
+}
+
+.split {
+    position: absolute;
+    border: none;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    top: 440px;
+    cursor: no-drop;
+
+}
+
+.start:hover,
+.reset:hover,
+.split:hover {
+    background-color: black;
+    color: white;
+}
+
+.right {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 30px 0;
+}
+
+.lap {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+}
+
+.lap1 {
+    font-weight: 800;
+}
+
+.lap2 {
+    color: rgb(196, 193, 193);
+    display: flex;
+}
+
+@media only screen and (max-width:850px) {
+    .clock {
+        justify-content: center;
+        align-items: center;
+    }
+}
